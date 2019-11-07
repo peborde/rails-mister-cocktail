@@ -1,0 +1,9 @@
+<h1>Add a dose !</h1>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= f.input :description %>
+<%= f.association :ingredient %>
+<%= f.submit "add your dose !", class: "btn btn-primary" %>
+
+<% end -%>
+
+<p>Find me in app/views/doses/new.html.erb</p>
